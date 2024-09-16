@@ -19,8 +19,8 @@ int main() {
 
     long double time = (long double)__rdtsc();
     double result = exp_maclaurin(x);
-
+    long double frequency = 2300000000.0;
     time = (long double)__rdtsc() - time;
-    printf("%.10lf", time / 2300000000.0);
+    printf("%.10lf", time / frequency);
     return 0;
 }
